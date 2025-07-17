@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff5f8;
+  color: #333;
+}
+
+nav {
+  background-color: #ffdde2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #d12d70;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #a61955;
+  border-bottom: 2px solid #a61955;
+}
+
+.main-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.main-header h1 {
+  color: #d12d70;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.main-mofusand-img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.6s ease-in-out;
+}
+
+.description {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.description p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #d12d70;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #a61955;
+}
+
+.discover-section {
+  padding: 60px 30px;
+  background-color: #fff0f3;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 2rem;
+  color: #d12d70;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid-item img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}

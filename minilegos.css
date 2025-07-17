@@ -1,0 +1,120 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9ff;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Navigation */
+nav {
+  background-color: #d0e2f3;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #2a61a8;
+}
+
+/* Header */
+.main-header {
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: #0c2e4c;
+}
+
+/* Description Flex */
+.description-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  gap: 30px;
+}
+
+.image-side img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  transition: opacity 0.8s ease;
+}
+
+.text-side {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.back-btn, .next-btn {
+  padding: 10px 25px;
+  background-color: #063769;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover, .next-btn:hover {
+  background-color: #2a61a8;
+}
+
+/* More Figurines */
+.discover-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #2a3d66;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}

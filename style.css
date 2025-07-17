@@ -1,0 +1,171 @@
+/* MAIN PAGE CSS */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff5f8;
+  color: #333;
+}
+
+nav {
+  background-color: #ffdde2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #d12d70;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #a61955;
+  border-bottom: 2px solid #a61955;
+}
+
+/* INTRO SECTION - 2 column layout */
+
+.section.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 30px;
+  gap: 40px;
+}
+
+.intro-text {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  color: #d12d70;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.intro-image {
+  flex: 1 1 40%;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FIGURINE SECTION */
+
+.figurine-section {
+  background-color: #ffeef2;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.figurine-section h2 {
+  color: #d12d70;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.figurine-section p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #d12d70;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.next-btn:hover {
+  background-color: #a61955;
+}
+
+/* DISCOVER SECTION */
+
+.discover-section {
+  padding: 60px 30px;
+  background-color: #fff0f3;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 2rem;
+  color: #d12d70;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid-item img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Fix */
+
+@media (max-width: 768px) {
+  .section.intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text, .intro-image {
+    flex: 1 1 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+}
+
+#profile-photo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.8s ease-in-out; /* Ini yang buat smooth */
+}
+

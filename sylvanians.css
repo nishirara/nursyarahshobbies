@@ -1,0 +1,133 @@
+/* General Reset & Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f2;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #f3d0c9;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #aa4c4c;
+}
+
+/* Header Section with Title on Top of Image */
+.main-header {
+  position: relative;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+.main-header h1 {
+  position: absolute;
+  top: 30px;
+  left: 100px; /* moved further right */
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+  z-index: 2;
+}
+
+.main-header img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Description Section - Image Left, Text Right */
+.description-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  gap: 30px;
+}
+
+.image-side img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  transition: opacity 0.8s ease;
+}
+
+.text-side {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Back and Next Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.back-btn, .next-btn {
+  padding: 10px 25px;
+  background-color: #c34b4b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover, .next-btn:hover {
+  background-color: #962828;
+}
+
+/* More Figurines Section */
+.discover-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #5a2b2b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}

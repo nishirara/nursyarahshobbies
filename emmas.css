@@ -1,0 +1,114 @@
+/* General Reset & Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f2;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #cdd8c9;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #4c734c;
+}
+
+/* Header Section */
+.main-header {
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: #325432;
+  margin-bottom: 20px;
+}
+
+.main-header img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  transition: opacity 0.8s ease;
+}
+
+/* Description Text */
+.description {
+  padding: 30px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  justify-content: start;
+  padding: 20px 30px;
+}
+
+.back-btn {
+  padding: 10px 25px;
+  background-color: #5b865b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #3d5f3d;
+}
+
+/* More Figurines Section */
+.discover-section {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.discover-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #2e4e2e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
